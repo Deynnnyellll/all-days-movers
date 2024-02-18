@@ -1,47 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="output.css" />
 
     <title>All Days Movers</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="fixed md:flex md:justify-between md:items-center ps-4 h-20 w-full bg-slate-600">
+      <div class="flex justify-between items-center cursor-pointer">
+        <img src="/assets/AllDays_Logo_header.png">
+        
+        <div class="md:hidden z-10 text-white">
+          <i class="fas fa-bars text-[25px]" onclick="toggleBar(this)"></i>
+        </div>
+      </div>
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto px-5 text-white select-none -top-[400px] max-md:transition-all max-md:duration-300" id="menu-bar-toggle">
+        <li
+          class="mx-5 my-2 md:my-0"
+        >
+          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">HOME</a>
+        </li>
+        <li
+          class="relative justify-center items-center px-5 py-2"
+        >
+          <div
+            class="flex items-center cursor-pointer gap-3 hover:text-stone-400 hover:duration-200"
+            onclick="toggleDropdown()"
+          >
+          ABOUT
+              <i class="fas fa-chevron-right text-[15px]" id="dropdown-icon"></i>
+          </div>
+          <div class="absolute top-[40px] w-[200px] md:-right-[90px] hidden" id="dropdown">
+              <ul>
+                <li
+                  class="mx-5 my-2 md:my-0"
+                >
+                  <a href="#about-us" class="cursor-pointer hover:text-stone-400 hover:duration-200">ABOUT US</a>
+                </li>
+            <ul>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">KEY OFFICER</a>
+              </li>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">CORE VALUES</a>
+              </li>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">SERVICE WE OFFERED</a>
+              </li>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">MEET THE TEAM</a>
+              </li>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR FLEET</a>
+              </li>
+              <li
+                class="mx-5 my-2 md:my-0"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR PARTNERS</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
+          class="flex justify-center items-center px-4 py-2 border-[1px] cursor-pointer hover:text-stone-400 hover:border-stone-400 hover:duration-200"
+        >
+          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+
     <section class="h-[100vh] bg-slate-600">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
-    <section class="h-[100vh] bg-gray-950">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+    <section class="h-[100vh] bg-gray-950" id="about-us">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-red-400">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-blue-700">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-fuchsia-950">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-rose-950">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-pink-900">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-emerald-900">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
     <section class="h-[100vh] bg-yellow-950">
-        <img src="/assets/AllDays_Logo_header.png" class="header">
+      <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
-</body>
+
+    <script>
+      function toggleDropdown() {
+        let dropdown = document.querySelector("#dropdown");
+        let dropdownIcon = document.querySelector("#dropdown-icon");
+
+        dropdown.classList.toggle("hidden");
+
+        if (dropdownIcon.classList.contains("fa-chevron-right")) {
+            dropdownIcon.classList.remove("fa-chevron-right");
+            dropdownIcon.classList.add("fa-chevron-down");
+        } else {
+            dropdownIcon.classList.remove("fa-chevron-down");
+            dropdownIcon.classList.add("fa-chevron-right");
+        }
+      }
+
+      toggleBar = (bar) => {
+        let menuBarToggle = document.querySelector("#menu-bar-toggle")
+
+        menuBarToggle.classList.toggle("max-md:translate-y-[450px]")
+        bar.classList.toggle("fa-times")
+      };
+    </script>
+  </body>
 </html>
