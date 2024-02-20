@@ -2,4 +2,8 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  
+
+.clip-image {
+    clip-path: ellipse(70% 70% at 65% 10%);
+}
