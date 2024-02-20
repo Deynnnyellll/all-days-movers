@@ -2,8 +2,11 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  
 
+.clip-image {
+    clip-path: ellipse(70% 70% at 65% 10%);
+}
 
 .border_custom {
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
