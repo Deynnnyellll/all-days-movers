@@ -20,6 +20,7 @@
       <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto px-5 text-white select-none -top-[400px] max-md:transition-all max-md:duration-300" id="menu-bar-toggle">
         <li
           class="mx-5 my-2 md:my-0"
+          onclick="smoothScroll(document.getElementById('home'))"
         >
           <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">HOME</a>
         </li>
@@ -37,37 +38,44 @@
               <ul>
                 <li
                   class="mx-5 my-2 md:my-0"
+                  onclick="smoothScroll(document.getElementById('about'))"
                 >
                   <a href="#about-us" class="cursor-pointer hover:text-stone-400 hover:duration-200">ABOUT US</a>
                 </li>
             <ul>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('officer'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">KEY OFFICER</a>
               </li>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('core'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">CORE VALUES</a>
               </li>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('service'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">SERVICE WE OFFERED</a>
               </li>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('team'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">MEET THE TEAM</a>
               </li>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('fleet'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR FLEET</a>
               </li>
               <li
                 class="mx-5 my-2 md:my-0"
+                onclick="smoothScroll(document.getElementById('partner'))"
               >
                 <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR PARTNERS</a>
               </li>
@@ -77,7 +85,7 @@
         <li
           class="flex justify-center items-center px-4 py-2 border-[1px] cursor-pointer hover:text-stone-400 hover:border-stone-400 hover:duration-200"
         >
-          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">CONTACT US</a>
+          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200" onclick="smoothScroll(document.getElementById('contact'))">CONTACT US</a>
         </li>
       </ul>
     </nav>
@@ -86,18 +94,20 @@
     </section>
 
     <!-- Landing Page -->
-    <section class="h-[100vh] bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover font-montserrat">
+    <section class="h-[100vh] bg-[url('/assets/BGimage-1024x518.png')] bg-cover font-montserrat mr-0">
       <img src="/assets/Logistic Ship.png" class="clip-image absolute top-0 h-[100%] w-[110%] md:h-[110%] md:w-[120%] z-1" alt="">
-        <div class="bg-[#132937] bg-opacity-70 h-[47%] w-[85%] rounded-[70px] relative top-20 left-10 md:left-[55%] flex flex-col md:w-[43%] md:h-[51%]">
-          <h5 class="text-orange-500 pt-6 w-[70%] relative left-[15%] md:w-full md:left-0 text-md md:text-lg text-center"> TEAMWORK | TRANSPARENCY | COMMITMENT | OBLIGATION </h5>
-          <p class="text-white text-justify text-[10px] md:text-lg md:ml-3 w-[95%] pt-2 ps-4">
-            All Days Movers Inc. is a 100% Filipino owned company which has been in the DOMESTIC forwarding business for 8 years. Our seasoned key officers have established good business partnership relationships with major shipping companies to meet our clientele’s service requirements in terms of on-time container availability, delivery commitment and competitive pricing. With a comprehensive network of offices and agencies nationwide, the company is committed to a full door to door service to and from Manila to various destinations in the Philippines.
-          </p>
+        <div class="bg-[#132937] bg-opacity-70 h-[46%] w-[85%] rounded-[70px] relative top-[15%] left-[8%] md:left-[55%] md:w-[43%] md:h-[53%]">
+          <div class="flex flex-col h-[80%] justify-between pt-[5%] items-center">
+            <h5 class="text-orange-500 md:w-full text-sm lg:text-md xl:text-lg text-center"> TEAMWORK | TRANSPARENCY | COMMITMENT | OBLIGATION </h5>
+            <p class="text-white text-justify text-xs lg:text-md lg:text-md xl:text-lg md:ml-0 w-[95%] pt-2 ps-4">
+              All Days Movers Inc. is a 100% Filipino owned company which has been in the DOMESTIC forwarding business for 8 years. Our seasoned key officers have established good business partnership relationships with major shipping companies to meet our clientele’s service requirements in terms of on-time container availability, delivery commitment and competitive pricing. With a comprehensive network of offices and agencies nationwide, the company is committed to a full door to door service to and from Manila to various destinations in the Philippines.
+            </p>
+          </div>
         </div>
         
       </div>
 
-      <div class="flex flex-col w-[65%] text-white gap-1 md:gap-0 relative top-[13%] left-[20%] md:left-5 md:top-[15%] md:w-[18%] pt-3 md:pt-2">
+      <div class="flex flex-col w-[65%] text-white gap-1 md:gap-0 relative top-[15%] left-[20%] md:left-5 md:top-[15%] md:w-[50%] lg:w-[50%] xl:w-[18%] pt-3 md:pt-2">
         <div class="flex items-center gap-3">
           <i class="fas fa-envelope-square text-xl"> </i>
           <p class="text-sm"> inquiry@alldaysmovers.com  </p>
@@ -113,18 +123,18 @@
           <p class="text-sm"> Penthouse, Pearl of the Orient Tower Roxas Blvd., City of Manila, Philippines </p>
         </div>
 
-        <button class="bg-[#3ad49e] p-2 mt-2 rounded-3xl relative font-bold md:h-10 md:w-56"> <u> GET IN TOUCH NOW </u></button>
+        <button class="bg-[#3ad49e] p-2 mt-2 rounded-3xl relative font-bold md:h-10 md:w-56" onclick="smoothScroll(document.getElementById('contact'))"> <u> GET IN TOUCH NOW </u></button>
        
       </div>
     </section>
 
     <!-- About Us -->
-    <section class="bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover flex flex-col justify-items-center items-center text-white font-montserrat">
+    <section id="about" class="bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover flex flex-col justify-items-center items-center text-white font-montserrat">
       <h1 class="text-center text-xl pt-4 mb-3 md:mb-5 md:mt-5 md:text-4xl"> ABOUT US </h1>
 
       <div class="flex items-center flex-col w-[95%] text-center bg-[#f4aa39] p-3 rounded-3xl bg-opacity-30 mb-5">
         <h3 class="font-bold md:text-4xl"> COMPANY PROFILE </h3>
-        <p class="text-xs text-justify md:text-lg md:w-[87%] md:relative md:left-12"> All Days Movers Inc. is a 100% Filipino owned company which has been in the DOMESTIC forwarding business for 8 years. Our
+        <p class="text-xs text-justify md:text-md lg:text-lg md:w-[87%] md:relative md:left-0"> All Days Movers Inc. is a 100% Filipino owned company which has been in the DOMESTIC forwarding business for 8 years. Our
           seasoned key officers have established good business partnership relationships with major shipping companies to meet our
           clientele’s service requirements in terms of on-time container availability, delivery commitment and competitive pricing. With a
           comprehensive network of offices and agencies nationwide, the company is committed to a full door to door service to and from
@@ -135,19 +145,19 @@
           cost.</p>
       </div>
 
-      <div class="flex flex-col md:flex-row items-center md:gap-12 md:pl-10">
-        <div class="flex flex-items-center flex-col w-[95%] md:w-[47%] md:h-[90%] text-center bg-[#f4aa39] p-2 rounded-lg bg-opacity-30 mb-5">
+      <div class="flex flex-col md:flex-row items-center md:gap-[4%] md:pl-[3%]">
+        <div class="flex flex-items-center flex-col w-[95%] md:w-[47%] md:h-[90%] text-center bg-[#f4aa39] p-2 rounded-md bg-opacity-30 mb-5">
           <h3 class="font-bold md:text-4xl"> OUR MISSION </h3>
-          <p class="text-xs text-justify md:text-lg"> All Days Movers Inc. believes that “ON TIME DELIVERY” is a key
+          <p class="text-xs text-justify md:text-md lg:text-lg"> All Days Movers Inc. believes that “ON TIME DELIVERY” is a key
             factor in sustaining the customers’ continuous trust and
             confidence. More to our commitment to service, we make it a
             point to be MORE VISIBLE at times when there are inevitable
             hitches and lapses in the process</p>
         </div>
   
-        <div class="flex flex-items-center flex-col w-[95%] md:w-[47%] md:h-[90%] text-center bg-[#f4aa39] p-2 rounded-lg bg-opacity-30 mb-5">
+        <div class="flex flex-items-center flex-col w-[95%] md:w-[47%] md:h-[90%] text-center bg-[#f4aa39] p-2 rounded-md bg-opacity-30 mb-5">
           <h3 class="font-bold md:text-4xl"> OUR VISION </h3>
-          <p class="text-xs text-justify md:text-lg"> To be the ultimate logistics provider which can offer a complete
+          <p class="text-xs text-justify md:text-md lg:text-lg"> To be the ultimate logistics provider which can offer a complete
             and total logistics solution to the cargo transport industry
             composed of services ranging from sea freight forwarding, air
             freight forwarding, international freight forwarding, warehousing,
@@ -158,20 +168,20 @@
     </section>
 
     <!-- Key Officers -->
-    <section class="bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover flex flex-col justify-items-center items-center text-white font-montserrat gap-4 pb-5">
+    <section id="officer" class="bg-[url('/assets/BGimage-1024x518.png')] w-full bg-no-repeat bg-cover flex flex-col justify-items-center items-center text-white font-montserrat gap-4 pb-5">
       <h1 class="text-center text-xl pt-4 mb-3 md:text-4xl"> KEY OFFICERS </h1>
 
       <div class="flex flex-col items-center">
-        <div class="overflow-hidden h-[150px] w-[150px] md:h-[250px] md:w-[250px] rounded-full border-4 border-[#f4aa39]">
+        <div class="overflow-hidden max-sm:h-[150px] max-sm:w-[150px]  h-[175px] w-[175px] lg:h-[250px] lg:w-[250px] rounded-full border-4 border-[#f4aa39]">
           <img src="/assets/Photos/officer_president.jpg" alt="">
         </div>
         <h4 class="font-bold"> NELSON G. SANTOS </h4>
         <p> PRESIDENT - CEO </p>
       </div>
 
-      <div class="flex flex-col md:flex-row items-center justify-between w-[70%]">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-10 w-full text-center">
         <div class="flex flex-col justify-items-center items-center">
-          <div class="overflow-hidden h-[150px] w-[150px] md:h-[250px] md:w-[250px] rounded-full border-4 border-[#f4aa39]">
+          <div class="overflow-hidden max-sm:h-[150px] max-sm:w-[150px]  h-[175px] w-[175px] lg:h-[250px] lg:w-[250px] rounded-full border-4 border-[#f4aa39]">
             <img src="/assets/Photos/officer_operationsmanager.jpg" alt="">
           </div>
           <h4 class="font-bold"> NONELON A. DELA CRUZ JR. </h4>
@@ -179,7 +189,7 @@
         </div>
   
         <div class="flex flex-col justify-items-center items-center">
-          <div class="overflow-hidden h-[150px] w-[150px] md:h-[250px] md:w-[250px] rounded-full border-4 border-[#f4aa39]">
+          <div class="overflow-hidden max-sm:h-[150px] max-sm:w-[150px]  h-[175px] w-[175px] lg:h-[250px] lg:w-[250px] rounded-full border-4 border-[#f4aa39]">
             <img src="/assets/Photos/officer_salesmanager.jpg" alt="">
           </div>
           <h4 class="font-bold"> THEREZE RANDALLE SANTOS </h4>
@@ -187,7 +197,7 @@
         </div>
   
         <div class="flex flex-col justify-items-center items-center">
-          <div class="overflow-hidden h-[150px] w-[150px] md:h-[250px] md:w-[250px] rounded-full border-4 border-[#f4aa39]">
+          <div class="overflow-hidden max-sm:h-[150px] max-sm:w-[150px]  h-[175px] w-[175px] lg:h-[250px] lg:w-[250px] rounded-full border-4 border-[#f4aa39]">
             <img src="/assets/Photos/officer_accountingmanager.jpg" alt="">
           </div>
           <h4 class="font-bold"> MIRACLE D. TIO </h4>
@@ -197,35 +207,40 @@
     </section>
 
     <!-- Core Values -->
-    <section class="bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover p-4 font-montserrat text-white">
+    <section id="core" class="bg-[url('/assets/BGimage-1024x518.png')] bg-no-repeat bg-cover p-4 font-montserrat text-white">
       <h1 class="text-center text-xl pt-4 mb-3 md:text-4xl"> CORE VALUES </h1>
       <div class="flex justify-center items-center relative top-[-15%] h-[50%] gap-[0.5px] md:top-[-5%]">
-        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:h-[200px] md:w-[200px] rounded-full">
+        <!-- Magnifying Glass -->
+        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:w-[150px] md:h-[150px] lg:h-[200px]lg::w-[200px] rounded-full">
           <img src="/assets/magnifying glass.png" class="w-[75%] h-[75%] rounded-full relative top-[12%] left-[12%]" alt="">
         </div>
-  
-        <img src="/assets/arrow.png" class="w-[8%] h-[2%] md:w-[15%] md:h-[10%]" alt="">
-  
-        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:h-[200px] md:w-[200px] rounded-full">
+        
+        <!-- Arrow 1 -->
+        <img src="/assets/arrow.png" class="w-[8%] h-[2%] md:w-[10%] md:h-[6%] lg:w-[15%] lg:h-[10%]" alt="">
+        
+        <!-- Hands -->
+        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] rounded-full">
           <img src="/assets/arms.png" class="w-[75%] h-[75%] rounded-full relative top-[12%] left-[12%]" alt="">
         </div>
-  
-        <img src="/assets/arrow.png" class="w-[8%] h-[2%] md:w-[15%] md:h-[10%]" alt="">
-  
-        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:h-[200px] md:w-[200px] rounded-full">
+        
+        <!-- Arrow 2 -->
+        <img src="/assets/arrow.png" class="w-[8%] h-[2%] md:w-[10%] md:h-[6%] lg:w-[15%] lg:h-[10%]" alt="">
+        
+        <!-- Light Bulb -->
+        <div class="bg-white bg-opacity-20 h-[120px] w-[120px] md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] rounded-full">
           <img src="/assets/light bulb.png" class="w-[75%] h-[75%] rounded-full relative top-[12%] left-[12%]" alt="">
         </div>
       </div>
 
-      <div class="flex justify-between pt-4 md:w-[80%] w-full gap-10 md:relative md:left-[10%]">
-        <div class="flex flex-col text-center w-[55%] md:w-[35%]">
-          <p class="font-bold text-xs md:text-2xl"> TRANSPARENCY </p>
-          <p class="text-xs md:text-lg"> We only commit what we are capable of </p>
+      <div class="flex justify-between pt-4 md:w-[85%] relative md:left-[8%]">
+        <div class="flex flex-col text-center w-[55%] md:w-[30%]">
+          <p class="font-bold text-xs md:text-sm lg:text-2xl"> TRANSPARENCY </p>
+          <p class="text-xs md:text-sm lg:text-lg"> We only commit what we are capable of </p>
         </div>
 
-        <div class="flex flex-col text-center w-[55%] md:w-[35%]">
-          <p class="font-bold text-xs md:text-2xl"> TEAMWORK </p>
-          <p class="text-xs md:text-lg"> Our highly dedicated and efficient
+        <div class="flex flex-col text-center w-[55%] md:w-[30%]">
+          <p class="font-bold text-xs md:text-sm lg:text-2xl"> TEAMWORK </p>
+          <p class="text-xs md:text-sm lg:text-lg"> Our highly dedicated and efficient
             employees maintain an open line of
             communication with the different
             departments of the company and
@@ -235,9 +250,9 @@
             satisfaction of the customers. </p>
         </div>
 
-        <div class="flex flex-col text-center w-[55%] md:w-[35%]">
-          <p class="font-bold text-xs md:text-2xl"> OUT-THE-BOX-SOLUTION </p>
-          <p class="text-xs md:text-lg"> We do not confine ourselves to what we
+        <div class="flex flex-col text-center w-[55%] md:w-[30%]">
+          <p class="font-bold text-xs md:text-sm lg:text-2xl"> OUT-THE-BOX-SOLUTION </p>
+          <p class="text-xs md:text-sm lg:text-lg"> We do not confine ourselves to what we
             only have, we are not bound by the
             limitations of company assets in terms
             of delivering quality service to our
@@ -252,12 +267,12 @@
 
     </section>
 
-    <section class="bg-[url('/assets/BGimage.png')] bg-cover bg-right bg-no-repeat font-montserrat text-white">
+    <section id="service" class="bg-[url('/assets/BGimage.png')] bg-cover bg-right bg-no-repeat font-montserrat text-white">
       <div class="flex flex-col items-center justify-center pt-10 select-none">
-        <h1 class="max-md:text-[18px] text-[35px] lg:text-[45px]">SERVICES WE OFFERED!</h1>
-        <p class="max-md:text-[10px] lg:text-[20px] pt-2">Reliable Shipping Services for Your Business Needs</p>
-        <div class="mx-10 lg:mx-20 text-center pt-1">
-          <p class="max-md:text-[10px] lg:text-[20px]">Our company is committed to meeting client demands by providing dependable shipping services. We have fostered positive
+        <h1 class="max-md:text-[18px] text-[35px] md:text-[45px]">SERVICES WE OFFERED!</h1>
+        <p class="max-md:text-[10px] md:text-[20px] pt-2">Reliable Shipping Services for Your Business Needs</p>
+        <div class="mx-10 md:mx-20 text-center pt-1">
+          <p class="max-md:text-[10px] md:text-[20px]">Our company is committed to meeting client demands by providing dependable shipping services. We have fostered positive
             relationships with local shipping lines to ensure container availability, timely delivery, and competitive rates. Our door-to-door
             service from Manila to anywhere in the Philippines is just one of the many solutions we offer. We have also expanded our services to
             include RORO transportation, which allows for faster transit times to more remote areas in Visayas and Mindanao.
@@ -322,10 +337,10 @@
       </div>
     </section>
 
-    <section class="bg-[url('/assets/BGimage.png')] bg-cover bg-no-repeat bg- font-montserrat text-white">
+    <section id="team" class="bg-[url('/assets/BGimage.png')] bg-cover bg-no-repeat bg- font-montserrat text-white">
       <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
       <div class="flex flex-col items-center pt-5">
-        <h1 class="max-md:text-[18px] text-[35px] lg:text-[45px]">MEET THE TEAM</h1>
+        <h1 class="max-md:text-[18px] text-[35px] md:text-[45px]">MEET THE TEAM</h1>
         <div class="grid grid-cols-1 h-full mb-10 mx-10"> 
           <!-- first row -->
           <div class="grid max-sm:grid-cols-2 grid-cols-3 gap-10 my-3">
@@ -356,10 +371,10 @@
       </div>
     </section>
 
-    <section class="bg-[url('/assets/AllDays_MainImage.png')] bg-cover bg-no-repeat font-montserrat text-white overflow-hidden relative">
+    <section id="fleet" class="bg-[url('/assets/AllDays_MainImage.png')] bg-cover bg-no-repeat font-montserrat text-white overflow-hidden relative">
       <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
       <div class="ps-5 pt-5">
-        <h1 class="text-center max-md:text-[18px] text-[35px] lg:text-[45px]">OUR FLEET</h1>
+        <h1 class="text-center max-md:text-[18px] text-[35px] md:text-[45px]">OUR FLEET</h1>
         <h3 class="max-md:text-[10px]">Adequate Equipment Resources to Meet Client Cargo Needs</h3>
         <ol>
           <li class="flex items-center ps-5 max-md:text-[10px]"><img class="w-[15px] h-[15px] mr-2"src="/assets/yellow_dot.png">12 units tractors heads</li>
@@ -370,11 +385,11 @@
           <li class="flex items-center ps-5 max-md:text-[10px]"><img class="w-[15px] h-[15px] mr-2"src="/assets/yellow_dot.png">5 units service motorcycles</li>
           <li class="flex items-center ps-5 max-md:text-[10px]"><img class="w-[15px] h-[15px] mr-2"src="/assets/yellow_dot.png">12 units leased closed vans and wing vans</li>
         <ol/>
-        <div class="h-[250px] max-sm:h-[220px] lg:h-[300px] relative pt-2">
-          <div class="w-[500px] lg:w-[800px] max-sm:h-[100px] h-[120px] lg:h-[140px] absolute max-sm:-translate-x-[220px] -translate-x-10 border-blue-950 border-[3px] rounded-[20px] overflow-hidden">
+        <div class="h-[250px] max-sm:h-[220px] md:h-[300px] relative pt-2">
+          <div class="w-[500px] md:w-[800px] max-sm:h-[100px] h-[120px] md:h-[140px] absolute max-sm:-translate-x-[220px] -translate-x-10 border-blue-950 border-[3px] rounded-[20px] overflow-hidden">
             <img class="w-full h-full object-fill"src="/assets/Multiple_buses.png">
           </div>
-          <div class="w-[500px] lg:w-[800px] max-sm:h-[100px] h-[120px] lg:h-[140px] absolute max-sm:translate-x-10 translate-x-20 max-sm:top-[100px] top-[120px] lg:top-[145px] border-blue-950 border-[3px] rounded-[20px] overflow-hidden">
+          <div class="w-[500px] md:w-[800px] max-sm:h-[100px] h-[120px] md:h-[140px] absolute max-sm:translate-x-10 translate-x-20 max-sm:top-[100px] top-[120px] md:top-[145px] border-blue-950 border-[3px] rounded-[20px] overflow-hidden">
             <img class="w-full h-full object-fill"src="/assets/Multiple_buses_two.png">
           </div>
         </div>
@@ -385,11 +400,11 @@
       </div>
     </section>
 
-    <section class="h-[100vh] bg-emerald-900">
+    <section id="partner" class="h-[100vh] bg-emerald-900">
       <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
-    <section class="h-[100vh] bg-yellow-950">
+    <section id="contact" class="h-[100vh] bg-yellow-950">
       <!-- <img src="/assets/AllDays_Logo_header.png" class="p-[1%]"> -->
     </section>
 
@@ -415,6 +430,29 @@
         menuBarToggle.classList.toggle("max-md:translate-y-[450px]")
         bar.classList.toggle("fa-times")
       };
+
+      window.smoothScroll = function(target) {
+        var scrollContainer = target;
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            targetY += target.offsetTop;
+        } while (target = target.offsetParent);
+
+        scroll = function(c, a, b, i) {
+            i++; if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        }
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
     </script>
   </body>
 </html>
