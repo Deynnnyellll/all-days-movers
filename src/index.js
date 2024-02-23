@@ -33,13 +33,13 @@ toggleBar = () => {
 var prevScrollpos = window.scrollY;
 
 window.onscroll = function() {
-var currentScrollPos = window.scrollY;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-bar").style.top = "0";
-  } else {
-    document.getElementById("nav-bar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
+  var currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav-bar").style.top = "0";
+    } else {
+      document.getElementById("nav-bar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
 }
 
 // Intersection Observer Animation
