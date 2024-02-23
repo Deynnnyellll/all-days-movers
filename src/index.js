@@ -30,21 +30,17 @@ toggleBar = () => {
   bar.classList.toggle("fa-times")
 };
 
-// Hiding Navbar while Scroll Down
-var scrollPos = window.scrollY
-const navBar = document.querySelector("#nav-bar")
+var prevScrollpos = window.scrollY;
 
-window.addEventListener('scroll', () => {
-  if (scrollPos < window.scrollY) {
-    navBar.classList.add('-translate-y-[100px]')
-    !dropdown.classList.contains("hidden") && dropdown.classList.add("hidden")
-    menuBarToggle.classList.contains("translate-y-[20px]") && (menuBarToggle.classList.remove("translate-y-[20px]") & menuBarToggle.classList.add("max-md:-translate-y-[190px]"))
-    bar.classList.contains("fa-times") && bar.classList.remove("fa-times")
+window.onscroll = function() {
+var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-bar").style.top = "0";
   } else {
-    navBar.classList.remove('-translate-y-[100px]')
+    document.getElementById("nav-bar").style.top = "-100px";
   }
-  scrollPos = window.scrollY
-})
+  prevScrollpos = currentScrollPos;
+}
 
 // Intersection Observer Animation
 const cards = document.querySelectorAll(".card")
