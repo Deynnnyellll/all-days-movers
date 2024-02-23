@@ -38,6 +38,10 @@ window.onscroll = function() {
       document.getElementById("nav-bar").style.top = "0";
     } else {
       document.getElementById("nav-bar").style.top = "-100px";
+      !dropdown.classList.contains("hidden") && dropdown.classList.add("hidden");
+      document.getElementById("dropdown-icon").classList.contains("fa-chevron-down") && (document.getElementById("dropdown-icon").classList.remove("fa-chevron-down") & document.getElementById("dropdown-icon").classList.add("fa-chevron-right"))
+      document.getElementById("toggle-bars").classList.add("max-md:-translate-y-[190px]")
+      document.getElementById("menu-bar").classList.remove("fa-times")
     }
     prevScrollpos = currentScrollPos;
 }
