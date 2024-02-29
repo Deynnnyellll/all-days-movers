@@ -9,42 +9,94 @@
     <title>All Days Movers</title>
   </head>
   <body class="overflow-x-hidden">
-    <nav id="nav-bar" class="fixed md:flex md:justify-between md:items-center ps-4 w-full font-montserrat z-20 p-4 bg-sky-950 bg-opacity-70 backdrop-blur-md duration-500">
+    <nav id="nav-bar" class="fixed lg:flex lg:justify-between lg:items-center ps-4 w-full font-montserrat z-20 p-4 bg-sky-950 bg-opacity-70 backdrop-blur-md duration-500">
       <div class="flex justify-between items-center cursor-pointer">
         <div 
-          class="h-full max-md:w-[200px] w-full"
+          class="h-full max-lg:w-[200px] w-full"
           onclick="smoothScroll(document.getElementById('home'))"
         >
           <img class="h-full w-full" src="/assets/AllDays_Logo_header.png">
         </div>
         
-        <div class="md:hidden z-10 text-white pt-1">
+        <div class="lg:hidden z-10 text-white pt-1">
           <i class="fas fa-bars text-[25px]" onclick="toggleBar()" id="menu-bar"></i>
         </div>
       </div>
-      <ul class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto px-5 text-white select-none duration-300 max-md:-translate-y-[190px] max-md:bg-sky-950 max-md:bg-opacity-70 max-md:pb-5 z-21" id="toggle-bars">
+      <ul class="lg:flex lg:items-center lg:z-auto lg:static absolute w-full left-0 lg:w-auto px-5 text-white select-none duration-300 max-lg:-translate-y-[240px] max-lg:bg-sky-950 max-lg:bg-opacity-70 max-lg:pb-5 z-21 max-lg:mt-[15px]" id="toggle-bars">
         <li
-          class="mx-5 my-2 md:my-0"
+          class="mx-5 my-2 lg:my-0"
           onclick="smoothScroll(document.getElementById('home'))"
         >
           <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">HOME</a>
         </li>
         <li
-          class="mx-5 my-2 md:my-0"
-          onclick="smoothScroll(document.getElementById('home'))"
+          class="mx-5 my-2 lg:my-0"
+          onclick="smoothScroll(document.getElementById('service'))"
         >
           <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">SERVICES</a>
         </li>
         <li
-          class="mx-5 my-2 md:my-0"
-          onclick="smoothScroll(document.getElementById('home'))"
+          class="relative justify-center items-center px-5 py-2"
         >
-          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">ABOUT</a>
+          <div
+            class="flex items-center cursor-pointer gap-3 hover:text-stone-400 hover:duration-200"
+            onclick="toggleDropdown()"
+          >
+          ABOUT
+              <i class="fas fa-chevron-right text-[15px]" id="dropdown-icon"></i>
+          </div>
+          <div class="absolute top-[40px] w-[200px] lg:-right-[90px] hidden bg-sky-950 bg-opacity-70 py-4 duration-500" id="dropdown">
+              <ul>
+                <li
+                  class="mx-5 my-2 lg:my-0"
+                  onclick="smoothScroll(document.getElementById('about'))"
+                >
+                  <a href="#about-us" class="cursor-pointer hover:text-stone-400 hover:duration-200">ABOUT US</a>
+                </li>
+            <ul>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('officer'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">KEY OFFICER</a>
+              </li>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('core'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">CORE VALUES</a>
+              </li>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('team'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">MEET THE TEAM</a>
+              </li>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('award'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR AWARDS</a>
+              </li>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('fleet'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR FLEET</a>
+              </li>
+              <li
+                class="mx-5 my-2 lg:my-0"
+                onclick="smoothScroll(document.getElementById('partner'))"
+              >
+                <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200">OUR PARTNERS</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li
           class="flex justify-center items-center px-4 py-2 border-[1px] cursor-pointer hover:text-stone-400 hover:border-stone-400 hover:duration-200"
         >
-          <a href="#" class="cursor-pointer hover:text-stone-400 hover:duration-200" onclick="smoothScroll(document.getElementById('contact'))">CONTACT US</a>
+          <a href="#contact" class="cursor-pointer hover:text-stone-400 hover:duration-200" onclick="smoothScroll(document.getElementById('contact'))">CONTACT US</a>
         </li>
       </ul>
     </nav>
@@ -378,8 +430,8 @@
           </div>
         </div>
       </div>
-      <img loading="lazy" class="absolute -top-[40px] right-[60px] w-[200px] h-[700px] md:right-[120px] lg:right-[200px] md:w-[250px] xl:right-[400px] z-10 rotate-3 xl:rotate-6" src="/assets/torn_paper.png">
-      <div class="card bg-white absolute top-[-50px] md:top-[-110px] -right-[35px] w-[205px] h-[500px] md:h-[800px] md:w-[325px] md:-right-[60px] lg:right-[15px] xl:-right-[60px] xl:w-[625px] overflow-hidden z-8 border_custom">
+      <img loading="lazy" class="absolute -top-[40px] right-[60px] w-[200px] h-[700px] md:right-[120px] lg:right-[225px] md:w-[250px] xl:right-[400px] z-10 rotate-3 xl:rotate-6" src="/assets/torn_paper.png">
+      <div class="card bg-white absolute top-[-50px] md:top-[-110px] -right-[35px] w-[205px] h-[500px] md:h-[800px] md:w-[325px] md:-right-[45px] lg:w-[410px] lg:right-0 xl:-right-[60px] xl:w-[625px] overflow-hidden z-8 border_custom">
         <!-- <img loading="lazy" class="h-full w-full" src="/assets/delivery_truck.gif"> -->
         <video autoplay muted loop class="h-full w-full scale-[4] xl:scale-[1.65] scale-x-100">
           <source src="/assets/Truck Loop (480) - Made with Clipchamp.mp4">

@@ -19,12 +19,12 @@ let menuBarToggle = document.querySelector("#toggle-bars")
 let bar = document.querySelector("#menu-bar")
 
 toggleBar = () => {
-  if (menuBarToggle.classList.contains("max-md:-translate-y-[190px]")) {
-    menuBarToggle.classList.remove("max-md:-translate-y-[190px]");
-    menuBarToggle.classList.add("translate-y-[20px]");
+  if (menuBarToggle.classList.contains("max-lg:-translate-y-[240px]")) {
+    menuBarToggle.classList.remove("max-lg:-translate-y-[240px]");
+    menuBarToggle.classList.add("translate-y-0");
   } else {
-    menuBarToggle.classList.remove("translate-y-[20px]");
-    menuBarToggle.classList.add("max-md:-translate-y-[190px]");
+    menuBarToggle.classList.remove("translate-y-0");
+    menuBarToggle.classList.add("max-lg:-translate-y-[240px]");
   }
 
   bar.classList.toggle("fa-times")
@@ -40,7 +40,7 @@ window.onscroll = function() {
       document.getElementById("nav-bar").style.top = "-100px";
       !dropdown.classList.contains("hidden") && dropdown.classList.add("hidden");
       document.getElementById("dropdown-icon").classList.contains("fa-chevron-down") && (document.getElementById("dropdown-icon").classList.remove("fa-chevron-down") & document.getElementById("dropdown-icon").classList.add("fa-chevron-right"))
-      document.getElementById("toggle-bars").classList.add("max-md:-translate-y-[190px]")
+      document.getElementById("toggle-bars").classList.add("max-lg:-translate-y-[240px]")
       document.getElementById("menu-bar").classList.remove("fa-times")
     }
     prevScrollpos = currentScrollPos;
