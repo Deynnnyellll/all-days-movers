@@ -85,3 +85,42 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+function submitForm() {
+  var name = document.getElementById('fname').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // You can perform additional validation here if needed
+
+  // Send the data to your server
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "form.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Optionally, you can handle the server's response here
+      console.log(xhr.responseText);
+    }
+  };
+
+  // Prepare the data to send to the server
+  var data = "fname=" + encodeURIComponent(name) +
+             "&email=" + encodeURIComponent(email) +
+             "&message=" + encodeURIComponent(message);
+
+  // Send the data
+  xhr.send(data);
+
+  // Reset the form after submission
+  document.getElementById('fname').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('message').value = "";
+}
+
+function clearForm() {
+  // Reset the form
+  document.getElementById('fname').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('message').value = "";
+}
