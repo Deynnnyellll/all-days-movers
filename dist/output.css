@@ -724,11 +724,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-\[20px\]{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -877,20 +872,12 @@ video {
   width: 400px;
 }
 
-.w-\[50\%\]{
-  width: 50%;
-}
-
 .w-\[500px\]{
   width: 500px;
 }
 
 .w-\[55\%\]{
   width: 55%;
-}
-
-.w-\[550px\]{
-  width: 550px;
 }
 
 .w-\[65\%\]{
@@ -919,14 +906,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[300px\]{
-  width: 300px;
 }
 
 .rotate-180{
@@ -1111,11 +1090,6 @@ video {
   background-color: rgb(58 212 158 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#EAEEF1\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 238 241 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#f4aa39\]{
   --tw-bg-opacity: 1;
   background-color: rgb(244 170 57 / var(--tw-bg-opacity));
@@ -1155,6 +1129,14 @@ video {
 
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
+}
+
+.bg-\[url\(\'\.\/assets\/BGimage-1024x518\.png\'\)\]{
+  background-image: url('./assets/BGimage-1024x518.png');
+}
+
+.bg-\[url\(\'\.\/assets\/BGimage\.png\'\)\]{
+  background-image: url('./assets/BGimage.png');
 }
 
 .bg-\[url\(\'\/assets\/AllDays_MainImage\.png\'\)\]{
@@ -1324,10 +1306,6 @@ video {
 
 .text-\[10px\]{
   font-size: 10px;
-}
-
-.text-\[13px\]{
-  font-size: 13px;
 }
 
 .text-\[15px\]{
@@ -1699,10 +1677,6 @@ video {
 
   .md\:w-\[43\%\]{
     width: 43%;
-  }
-
-  .md\:w-\[450px\]{
-    width: 450px;
   }
 
   .md\:w-\[47\%\]{
