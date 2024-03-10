@@ -3,3 +3,16 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+
+@media (min-width:1280px){
+  .torn {
+    right: 360px;
+  }
+}  
+
+@media (min-width:1440px){
+  .torn {
+    right: 400px;
+  }
+} 
