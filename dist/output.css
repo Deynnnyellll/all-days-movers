@@ -724,11 +724,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -759,10 +754,6 @@ video {
 
 .mt-\[20px\]{
   margin-top: 20px;
-}
-
-.ml-4{
-  margin-left: 1rem;
 }
 
 .flex{
@@ -881,6 +872,10 @@ video {
   width: 400px;
 }
 
+.w-\[50\%\]{
+  width: 50%;
+}
+
 .w-\[500px\]{
   width: 500px;
 }
@@ -915,54 +910,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[300px\]{
-  width: 300px;
-}
-
-.w-\[250px\]{
-  width: 250px;
-}
-
-.w-\[220px\]{
-  width: 220px;
-}
-
-.w-\[230px\]{
-  width: 230px;
-}
-
-.w-\[240px\]{
-  width: 240px;
-}
-
-.w-\[50px\]{
-  width: 50px;
-}
-
-.w-\[375px\]{
-  width: 375px;
-}
-
-.w-\[80\%\]{
-  width: 80%;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[40\%\]{
-  width: 40%;
-}
-
-.w-\[45\%\]{
-  width: 45%;
 }
 
 .rotate-180{
@@ -1238,14 +1185,6 @@ video {
   padding: 1rem;
 }
 
-.p-\[5\%\]{
-  padding: 5%;
-}
-
-.p-\[10\%\]{
-  padding: 10%;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1274,11 +1213,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-\[200px\]{
-  padding-left: 200px;
-  padding-right: 200px;
 }
 
 .pb-5{
@@ -1347,10 +1281,6 @@ video {
 
 .pt-\[50px\]{
   padding-top: 50px;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-center{
@@ -1493,6 +1423,10 @@ video {
 .hover\:border-stone-400:hover{
   --tw-border-opacity: 1;
   border-color: rgb(168 162 158 / var(--tw-border-opacity));
+}
+
+.hover\:bg-\[\#3ad49ed8\]:hover{
+  background-color: #3ad49ed8;
 }
 
 .hover\:text-stone-400:hover{
@@ -1769,10 +1703,6 @@ video {
     width: 100%;
   }
 
-  .md\:w-auto{
-    width: auto;
-  }
-
   .md\:-rotate-12{
     --tw-rotate: -12deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1964,6 +1894,10 @@ video {
     width: 250px;
   }
 
+  .lg\:w-\[30\%\]{
+    width: 30%;
+  }
+
   .lg\:w-\[400px\]{
     width: 400px;
   }
@@ -1990,18 +1924,6 @@ video {
 
   .lg\:w-auto{
     width: auto;
-  }
-
-  .lg\:w-\[80\%\]{
-    width: 80%;
-  }
-
-  .lg\:w-\[40\%\]{
-    width: 40%;
-  }
-
-  .lg\:w-\[30\%\]{
-    width: 30%;
   }
 
   .lg\:items-center{
