@@ -2054,6 +2054,30 @@ video {
     right: 400px;
   }
 
+  .xl\:right-\[320px\]{
+    right: 320px;
+  }
+
+  .xl\:right-\[300px\]{
+    right: 300px;
+  }
+
+  .xl\:right-\[370px\]{
+    right: 370px;
+  }
+
+  .xl\:right-\[390px\]{
+    right: 390px;
+  }
+
+  .xl\:right-\[395px\]{
+    right: 395px;
+  }
+
+  .xl\:right-\[420px\]{
+    right: 420px;
+  }
+
   .xl\:mb-0{
     margin-bottom: 0px;
   }
@@ -2141,5 +2165,15 @@ video {
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-\[18pxs\]{
+    color: 18pxs;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:right-\[400px\]{
+    right: 400px;
   }
 }
