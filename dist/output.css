@@ -2054,30 +2054,6 @@ video {
     right: 400px;
   }
 
-  .xl\:right-\[320px\]{
-    right: 320px;
-  }
-
-  .xl\:right-\[300px\]{
-    right: 300px;
-  }
-
-  .xl\:right-\[370px\]{
-    right: 370px;
-  }
-
-  .xl\:right-\[390px\]{
-    right: 390px;
-  }
-
-  .xl\:right-\[395px\]{
-    right: 395px;
-  }
-
-  .xl\:right-\[420px\]{
-    right: 420px;
-  }
-
   .xl\:mb-0{
     margin-bottom: 0px;
   }
@@ -2100,6 +2076,18 @@ video {
 
   .xl\:h-\[835px\]{
     height: 835px;
+  }
+
+  .xl\:h-\[600px\]{
+    height: 600px;
+  }
+
+  .xl\:h-\[800px\]{
+    height: 800px;
+  }
+
+  .xl\:h-\[825px\]{
+    height: 825px;
   }
 
   .xl\:w-\[18\%\]{
@@ -2141,6 +2129,12 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .xl\:scale-\[1\.75\]{
+    --tw-scale-x: 1.75;
+    --tw-scale-y: 1.75;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .xl\:pt-\[140px\]{
     padding-top: 140px;
   }
@@ -2165,15 +2159,5 @@ video {
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-\[18pxs\]{
-    color: 18pxs;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:right-\[400px\]{
-    right: 400px;
   }
 }
