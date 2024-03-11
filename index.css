@@ -15,4 +15,13 @@
   .torn {
     right: 400px;
   }
+  .contact {
+    padding-left: 40px;
+  }
+} 
+
+@media (min-width:768px){
+  .contact {
+    padding-left: 20px;
+  }
 } 
