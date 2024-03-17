@@ -2074,20 +2074,12 @@ video {
     height: 250px;
   }
 
-  .xl\:h-\[835px\]{
-    height: 835px;
-  }
-
-  .xl\:h-\[600px\]{
-    height: 600px;
-  }
-
-  .xl\:h-\[800px\]{
-    height: 800px;
-  }
-
   .xl\:h-\[825px\]{
     height: 825px;
+  }
+
+  .xl\:h-\[835px\]{
+    height: 835px;
   }
 
   .xl\:w-\[18\%\]{
@@ -2120,12 +2112,6 @@ video {
 
   .xl\:rotate-6{
     --tw-rotate: 6deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:scale-\[1\.65\]{
-    --tw-scale-x: 1.65;
-    --tw-scale-y: 1.65;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
